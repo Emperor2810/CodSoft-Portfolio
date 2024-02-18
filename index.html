@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond&family=Nunito:wght@300&display=swap" rel="stylesheet"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <div class="logo">Emperor@2810</div>
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li onclick="showSidebar()"><i class='bx bx-menu'></i></li>
+                </ul>
+                <div class="sidebar-content">
+                    <ul>
+                        <li><i onclick="closeSidebar()" class='bx bx-x'></i></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>Sarvesh</h2>
+            <h2>Sarvesh</h2>
+            <div class="accounts">
+                <ul>
+                    <li><i class='bx bxl-facebook-circle'></i></li>
+                    <li><i class='bx bxl-whatsapp' ></i></li>
+                    <li><i class='bx bxl-instagram' ></i></li>
+                    <a href="https://www.linkedin.com/in/sarvesh-patkar-561356226/"><li><i class='bx bxl-linkedin-square' ></i></li></a>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!--about me-->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="my.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="typing-text">To become a proficient web developer and Python programmer, leveraging my passion for technology and coding. With a
+                        solid foundation in computer science principles and practical skills honed through coursework and projects, I am eager to
+                        apply my abilities in a professional setting. Seeking an entry-level position where I can learn from experienced mentors,
+                        contribute to real-world projects, and continue to develop my skills in web development and Python programming. My goal
+                        is to make a positive impact while continuously learning and growing in the field.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Web app development</li>
+                            <li><span>Python Developer</span><br>Python app development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>CodSoft-2024</span><br>Web development internship</li>
+                            <li><span>CodSoft-2024</span><br>Python development internship</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>BE-Computer</li>
+                            <li><span>2018-2019</span><br>HSC</li>
+                            <li><span>2016-2017</span><br>SSC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div class="skill-logo">
+                    <i class='bx bxl-html5'></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-logo">
+                    <i class='bx bxl-css3'></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-logo">
+                    <i class='bx bxl-javascript'></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-logo">
+                    <i class='bx bxl-jquery'></i>
+                    <span>jQuery</span>
+                </div>
+                <div class="skill-logo">
+                    <i class='bx bxl-nodejs'></i>
+                    <span>NodeJS</span>
+                </div>
+                <div class="skill-logo">
+                    <i class='bx bxl-python'></i>
+                    <span>Python3</span>
+                </div>
+                <div class="skill-logo">
+                    <i class='bx bxl-postgresql'></i>
+                    <span>PostgresSQL</span>
+                </div>
+                <div class="skill-logo">
+                    <i class='bx bxl-bootstrap'></i>
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---->   
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Screenshot (12).png" alt="img">
+                    <div class="layer">
+                        <h3>Coffee Shop</h3>
+                        <a href="https://emperor2810.github.io/CodSoft/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Screenshot (13).png" alt="img">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <a href="https://emperor2810.github.io/Calculator/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Screenshot (14).png" alt="img">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <a href=""><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="Screenshot (15).png" alt="img">
+                    <div class="layer">
+                        <h3>Todo List</h3>
+                        <a href=""><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="Screenshot (16).png" alt="img">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <a href=""><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="Screenshot (17).png" alt="img">
+                    <div class="layer">
+                        <h3>Password Generator</h3>
+                        <a href=""><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btnn" id="seeMoreBtn">See More</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <P><i class='bx bxl-gmail'></i>sampatkar0001@gmail.com</P>
+                    <p><i class='bx bxs-phone-call' ></i>+91-8830806054</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/sarvesh-patkar-561356226/"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                    <a class="btn" download href="ResumeSP.pdf" >Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn2 " type="submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <footer>
+            <p>Emperor@2810 &copy; 2024 Sarvesh Patkar@ All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </footer>
+    </section>
+    
+    
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar-content');
+            sidebar.style.display = 'flex';
+        }
+
+        function closeSidebar() {
+            const sidebar = document.querySelector('.sidebar-content');
+            sidebar.style.display = 'none';
+        }
+
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const seeMoreBtn = document.getElementById("seeMoreBtn");
+    seeMoreBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        const additionalProjects = document.querySelectorAll(".work.hidden");
+        additionalProjects.forEach(function(project) {
+            project.classList.toggle("hidden");
+        });
+        seeMoreBtn.style.display = "none";
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutContent = document.querySelector(".about-col-2 p");
+    const text = aboutContent.textContent.trim();
+    aboutContent.textContent = '';
+
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            aboutContent.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 50);
+        } else {
+            index = 0;
+            aboutContent.textContent = '';
+            setTimeout(type, 1000);
+        }
+    }
+
+    type();
+});
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwlA2yl6cwQncsc6IpiuirBazBxD9ym1_hx7cpGWyWuSGlYwRB9Tzrf-4lYpjpRmmQw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
